@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo -list</title>
+	<link rel="stylesheet" href="./bootstrap4/bootstrap.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0%;
+		}
+		li.box{
+			line-height: 1.5;
+			background-color: blueviolet !important;
+			list-style: none;
+			font-size: xx-large;
+			line-height: 2;
+			text-align: center;
+			color: white;
+			text-shadow: 0px 0px 10px black;
+			margin-bottom: 5px;
+		}
+		.uncomplete li,.complete li{
+			line-height: 1.5;
+			list-style: none;
+			font-size: xx-large;
+			padding: 10px;
+			text-align: center;
+			color: white;
+			text-shadow: 0px 0px 10px black;
+			/* margin-bottom: 10px; */
+			margin-top: 10px;
+			background-color: red;
+			word-wrap: break-word;
+			
+
+		}
+		.uncomplete li:nth-child(even),.complete li:nth-child(odd){
+			background-color: rgb(68, 11, 11);
+			
+		}
+		input{
+			outline: none;
+			line-height: 1.5;
+			width: 80%;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="text-center text-primary">Todo List</h1>
+	<div class="container py-5 col-6 offset-3 ">
+		<input type="text" class="input">
+		<button onclick="Run()">ADD</button>
+	</div>
+	<div class="row container-fluid">
+
+	<div class="container col-6">
+		<li class="box">UNCOMPLETE WORK</li>
+		<div class="uncomplete" id="uncomplete">
+			<!-- uncomplete work is ke andar ae ga -->
+		</div>
+	</div>
+	<div class="container col-6">
+		<li class="box">COMPLETE WORK</li>
+		<div class="complete" id="complete">
+			<!-- complete work is ke andar ae ga -->
+		</div>
+	</div>
+</div>
+<script src="./script1.js"></script>
+
+	<script src="./script.js"></script>
+	<script src="./bootstrap4/popper.min.js"></script>
+	<script src="./bootstrap4/jquery.min.js"></script>
+	<script src="./bootstrap4/bootstrap.min.js"></script>
+</body>
+</html>
